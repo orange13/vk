@@ -9,6 +9,12 @@ import time
 session = vk.Session()
 api = vk.API(session)
 
+connection = pymysql.connect(host='localhost',
+                             user='root',
+                             password='3775578',
+                             db='bsh',
+                             charset='utf8',
+                             cursorclass=pymysql.cursors.DictCursor)
 
 #Запись данных в базу
 def write_to_base(group_id,users_info,offset_mark):
