@@ -1,0 +1,6 @@
+CREATE TABLE `TABLE_NAME` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` char(45) NOT NULL DEFAULT '',
+  `users` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=123 DEFAULT CHARSET=utf8;
